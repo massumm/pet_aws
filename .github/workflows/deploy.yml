@@ -12,10 +12,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
         with:
-          node-version: "16"
+         python-version: "3.9"
 
       - name: Install dependencies and bundle code
         env:
